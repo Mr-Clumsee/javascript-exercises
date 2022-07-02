@@ -1,11 +1,12 @@
 const sumAll = function(start, end) {
   
-    // throws error if both numbers are negative.
+    // throws error if any of the arguments are non-integer.
     if (!Number.isInteger(start) || !Number.isInteger(end)) return "ERROR";
     
-    // 
+    // throws error if any of the arguments are negative.
     if (start<0 || end <0) return "ERROR";
 
+    // if start > end, swap them.
     if (start>end)
     {
         let temp = start;
